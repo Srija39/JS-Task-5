@@ -1,0 +1,22 @@
+<html>
+    <head>
+        Task-35
+    </head>
+    <body>
+        <script>
+            function rev(num){
+                var revnum=0;
+                while(num!=0){
+                    revnum=(revnum*10)+(num%10);
+                    num=Math.floor(num/10);
+                }
+                return revnum;
+            }
+            var num=prompt("Enter a number: ");
+            document.writeln("Original number:  " +num);
+            var result=rev(num);
+            document.write("<br>")
+            document.writeln("The Reversed number is: "+result);
+        </script>
+    </body>
+</html>
